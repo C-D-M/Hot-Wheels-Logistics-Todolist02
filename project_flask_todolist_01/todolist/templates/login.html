@@ -1,0 +1,33 @@
+<!-- Sistema di Autenticazione Utenti: Login e Logout -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container text-center mt-3">
+    <h2>Admin Login</h2>
+    <div class="row no-gutters justify-content-center">
+
+        <div class="col-md-4">
+            <!-- form -->
+            <form action="#" method="POST" novalidate>
+                <!-- csrf_token -->
+                {{ form.hidden_tag() }}
+                <!-- username -->
+                <div class="form-group">
+                    {{ form.username.label }}
+                    {{ form.username(class="form-control") }}
+                </div>
+
+                <!-- password -->
+                <div class="form-group">
+                    {{ form.password.label }}
+                    {{ form.password(class="form-control") }}
+                </div>
+
+                <!-- submit -->
+                {{ form.submit(class="btn btn-outline-secondary") }}
+            </form>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

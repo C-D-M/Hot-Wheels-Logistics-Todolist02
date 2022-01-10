@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <br>
+    <h2>Crea Task</h2>
+    <p>Titolo e descrizione sono obbligatori!</p>
+    
+    <div class="row no-gutters">
+        <div class="col">
+            <!-- form -->
+            <form action="#" method="POST" novalidate>
+                <!-- csrf_token -->
+                {{ form.hidden_tag() }}
+                <!-- title -->
+                <div class="form-group">
+                    {{ form.title.label }}
+                    {{ form.title(class="form-control") }}
+                </div>
+
+                <!-- description -->
+                <div class="form-group">
+                    {{ form.description.label }}
+                    {{ form.description(class="form-control") }}
+                </div>
+
+                <!-- submit -->
+                {{ form.submit(class="btn btn-sm btn-outline-secondary") }}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

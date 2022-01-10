@@ -1,0 +1,16 @@
+.single-task-home {
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.my-footer {
+    background-color: silver;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

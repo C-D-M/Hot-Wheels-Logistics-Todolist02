@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+            <!-- Jinja2 -->
+            {% for task in tasks %}
+                <div class="single-task-home">
+                    <h4>{{ task.title }}</h4>
+                    <p>{{ task.description }}</p>
+                </div>
+            {% endfor %}
+
+            <footer class="my-footer">
+                <p>Proposal progetto Tecnologie Web. Nome progetto: "Hot Wheels Logistics"<br>
+                Candidati Back-end: Di Mauro Christian (0124002055) e Qronfli Iliass (0124002224)<br>
+                Candidati Front-end: Iannucci Vincenzo (0124002093) e Pianese Mario (0124002063)</p>
+            </footer>
+        </div>
+    </div>
+</div>
+{% endblock %}
